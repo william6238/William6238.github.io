@@ -24,12 +24,20 @@
             border-radius: 10%;
 
         }
-        td{
+
+        td {
             border-radius: 20%;
         }
 
+        td.aws:hover {
+            background: url(/photo/aws.png)center;
+            background-size: 200px;
+            border-style: solid;
+            border-width: 5px;
+        }
+
         td.siteedit:hover {
-            background: url(/photo/siteedit.png);
+            background: url(/photo/siteedit.png)center;
             background-size: 200px;
             border-style: dashed;
             border-width: 5px;
@@ -39,11 +47,7 @@
             border-style: inset;
         }
 
-        td a:hover {
-            opacity: 0;
-        }
-
-        table a:hover {
+        td:hover a {
             opacity: 0;
         }
 
@@ -73,7 +77,7 @@
     <div>
         <table border="1" align="center">
             <tr>
-                <td  width="150" height="150"><a href="">雲服務</a></td>
+                <td class="aws" width="150" height="150"><a href="">雲服務</a></td>
                 <td class="siteedit" width="150" height="150"><a href="">網站構建</a></td>
             </tr>
             <tr>
