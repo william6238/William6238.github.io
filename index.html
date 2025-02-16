@@ -2,7 +2,7 @@
 
 <head>
 
-    <link rel="stylesheet" href="food.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
     <style>
         * {
             transition-duration: 250ms;
@@ -21,24 +21,22 @@
         }
 
         table {
+            border: 1px solid #000;
             border-radius: 10%;
 
         }
 
-        td {
-            border-radius: 20%;
-        }
 
         td.aws:hover {
             background: url(/photo/aws.png)center;
-            background-size: 200px;
+            background-size: cover;
             border-style: solid;
             border-width: 5px;
         }
 
         td.siteedit:hover {
             background: url(/photo/siteedit.png)center;
-            background-size: 200px;
+            background-size: 100%;
             border-style: dashed;
             border-width: 5px;
         }
@@ -49,12 +47,17 @@
 
         td:hover a {
             opacity: 0;
+            
         }
 
         td {
+            border-radius: 20%;
             text-align: center;
+            height: 300px;
+            width: 300px;
 
         }
+        
 
         img {
             border-radius: 10%;
@@ -68,7 +71,14 @@
 
         .python:hover {
             background: url(/photo/數據統計python.png)center;
-            background-size: 200px;
+            background-size: 100%;
+            border-style: dashed;
+            border-width: 5px;
+        }
+
+        .presonint:hover {
+            background: url(/photo/dead\ cell\ live.png)center;
+            background-size: cover;
             border-style: dashed;
             border-width: 5px;
         }
@@ -78,6 +88,14 @@
 </head>
 
 <body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#" align="center">Home</a>
+
+            </li>
+        </ul>
+    </div>
     <h1>歡迎來到William的個人網站</h1>
     <hr>
     <h2>以下是我的技能展示:</h2>
@@ -89,7 +107,7 @@
             </tr>
             <tr>
                 <td class="python" width="150" height="150"><a href="">python</a></td>
-                <td width="150" height="150"><a href="">個人興趣</a></td>
+                <td class="presonint" width="150" height="150" onclick="window.location.href='personint.html';" ><a href="personint.html">個人興趣</a></td>
             </tr>
         </table>
     </div>

@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    ;
+  }
+.menu ul{list-style: none;
+  margin: 0;
+  padding: 0px;
+  width: 150px;
+  background-color: rgb(92, 39, 4);
+  text-shadow:2px 2px 2px red;
+  border-radius: 10px;
+  display: inline-block;
+  }
+  .menu a{text-decoration: none;
+  padding: 10px 20px;
+  line-height: 1.2em;
+  color:white;
+  display: block;
+  }
+  .menu a:hover{background-color: rgb(15, 122, 117);
+    border-radius: 40%;
+    color: black;
+  }
+  .menu .sub{
+    position: absolute;
+    top:38px;
+    background-color: rgb(240, 255, 27);
+    box-shadow: 10PX 10PX 5PX rgb(194, 153, 153);
+  }
+  .sub li{overflow: hidden;
+  height: 0px;
+transition: height 400ms;}
+  li:hover .sub li{
+    height:40px
+  }
+img{
+    display: block;
+    margin: 0 auto;
+}
